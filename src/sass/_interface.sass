@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body
   +reg
 img
@@ -13,7 +15,7 @@ img
     width: 760px
 @media (max-width: 768px)
   .container
-    width: 580px
+    width: 560px
 @media (max-width: 576px)
   .container
     width: 400px
@@ -25,3 +27,19 @@ img
   background-color: $main-color
   border: none
   padding: 18px 30px
+  &:hover
+    background-color: lighten($main-color,10%)
+    cursor: pointer
+.section
+  padding: 90px 0
+  &-title
+    font-size: 24px
+    +bold
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  border: 1px solid $border-imput
+  padding: 20px 25px
+  font-size: 15px
+  border-radius: 10px

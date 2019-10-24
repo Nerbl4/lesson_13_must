@@ -25,7 +25,7 @@
     &__item
       display: flex
       align-items: center
-      margin-bottom: 24px
+      margin-bottom: 26px
       &:last-child
         margin-bottom: 0
     &__image
@@ -36,7 +36,7 @@
       align-items: center
       justify-content: center
       border-radius: 50%
-      margin-right: 28px
+      margin-right: 32px
     &__text
       max-width: 231px
       font-size: 14px
@@ -45,13 +45,18 @@
 @media (max-width: 1200px)
   .hero
     &-block
-      flex-direction: column
+      // flex-direction: column
+    &-image
+      img
+        width: 85%
     &-list
       margin-bottom: 44px
     &-text
       padding-right: 10px
 @media (max-width: 768px)
   .hero
+    &-block
+      flex-direction: column
     &-text
       &__title
         font-size: 24px
@@ -75,7 +80,9 @@
       padding: 15px 27px
       +bold
   .hero
-    padding: 29px 0px
+    // padding: 29px 0px
+    padding-top: 29px
+    padding-bottom: 46px
     &-text
       padding-right: 0
       &__title
@@ -89,9 +96,12 @@
         margin-bottom: 25px
     &-list
       &__item
-        margin-bottom: 18px
+        margin-bottom: 24px
       &__text
         font-size: 12px
         line-height: 1.2
       &__image
         margin-right: 15px
+    &-image
+      img
+        width: 94%

@@ -19,9 +19,11 @@
 
 @mixin reg {
   font-family: 'Museo Sans Light', sans-serif;
+  color: $text-color;
   font-weight: 300;
 }
 @mixin bold {
   font-family: 'Museo Sans Bold', sans-serif;
+  color: $text-color;
   font-weight: 700;
 }
